@@ -1,0 +1,77 @@
+main {
+    margin-top: $spacing*13;
+
+    .cover-container {
+        //margin-bottom: $spacing*;
+    }
+
+    .cover {
+        //padding-top: $spacing*3;
+        position: relative;
+        color: $contrast-text;
+        border-radius: $border-radius;
+        overflow: hidden;
+
+        .with-overlay {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-title {
+            @include position(absolute, 0, 0, 0, 0);
+            padding: $spacing*2 $spacing*10;
+
+            &-content {
+                p {
+                    font-size: (14/$rem) rem;
+                    color: $contrast-text;
+                }
+            }
+        }
+    }
+
+    >article {
+        >section {
+            position: relative;
+            padding: $spacing*12 0;
+        }
+
+        .basics {
+            section {
+                margin-bottom: $spacing*3;
+                padding: $spacing*7;
+                box-shadow: $primary-box-shadow;
+                border-radius: $border-radius;
+
+                img {
+                    max-width: 373px;
+                }
+            }
+        }
+
+        .goals-content {
+            background: url("../../assets/img/photo-1.jpg") no-repeat center center / cover;
+            //@include position(absolute, 0, 0, 0, 0);
+            > div {
+                z-index: 2;
+            }
+
+            h3 {
+                color: $contrast-text;
+            }
+
+            p {
+                margin: 0;
+                color: $contrast-text;
+            }
+
+            img {
+                width: 90px;
+            }
+        }
+
+    }
+}

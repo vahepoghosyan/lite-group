@@ -1,0 +1,125 @@
+*, ::after, ::before {
+    box-sizing: border-box !important;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: $white;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 36px
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+p {
+    color: $text-color;
+}
+
+a {
+    color: $black;
+    text-decoration: none;
+    transition: .2s;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.border-radius {
+    border-radius: $border-radius;
+}
+
+.primary-background {
+    background-color: rgba(227, 78, 108, 0.11);
+}
+
+.primary-button {
+    display: inline-block;
+    padding: $spacing*1.5 $spacing*3;
+    color: $white;
+    background-color: $primary;
+    font-size: 12px;
+    border-radius: 10px;
+    box-shadow: $secondary-box-shadow;
+    //font-weight: $semi-bold;
+    border: 0;
+
+    &:hover {
+        background-color: $secondary;
+        color: $white;
+    }
+}
+
+.mb-6 {
+    margin-bottom: $spacing*6;
+}
+.mb-7 {
+    margin-bottom: $spacing*7;
+}
+.mb-8 {
+    margin-bottom: $spacing*8;
+}
+.mb-9 {
+    margin-bottom: $spacing*9;
+}
+.mb-10 {
+    margin-bottom: $spacing*10;
+}
+
+
+
+
+
+.primary {
+    color: $primary;
+}
+
+
+.with-overlay {
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+        content: '';
+        @include position(absolute, 0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.6);
+        pointer-events: none;
+        touch-action: none;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}

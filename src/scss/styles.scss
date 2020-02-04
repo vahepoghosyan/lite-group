@@ -1,0 +1,47 @@
+@import "bootstrap";
+@import "base/variables";
+@import "base/mixins";
+@import "custom";
+@import "header";
+@import "main";
+@import "footer";
+
+header {
+
+}
+
+main {
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+    main {
+
+    }
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    header {
+
+    }
+
+    main {
+
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    main {
+
+    }
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,57 @@
+header {
+
+    .navbar {
+        height: $spacing*10;
+        background-color: $white;
+        box-shadow: $secondary-box-shadow;
+
+        .navbar-brand {
+            img {
+                height: 65px
+            }
+        }
+
+        .nav-item {
+            margin-left: $spacing*6;
+
+            &.active {
+                .nav-link {
+                    color: $primary;
+                }
+            }
+
+            .nav-link {
+                color: $black;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    header {
+
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    header {
+
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}

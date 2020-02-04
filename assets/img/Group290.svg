@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="379" height="379" viewBox="0 0 379 379">
+  <g id="Group_290" data-name="Group 290" transform="translate(-408 -3515)">
+    <g id="Group_31" data-name="Group 31" transform="translate(408.141 3515.142)">
+      <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(150.859 150.858)" fill="none" stroke="#f37c7e" stroke-width="0.5">
+        <circle cx="38.5" cy="38.5" r="38.5" stroke="none"/>
+        <circle cx="38.5" cy="38.5" r="38.25" fill="none"/>
+      </g>
+      <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(95.859 95.858)" fill="none" stroke="#f37c7e" stroke-width="0.5" opacity="0.96">
+        <circle cx="93.5" cy="93.5" r="93.5" stroke="none"/>
+        <circle cx="93.5" cy="93.5" r="93.25" fill="none"/>
+      </g>
+      <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(43.859 43.858)" fill="none" stroke="#f37c7e" stroke-width="0.5" opacity="0.52">
+        <circle cx="145.5" cy="145.5" r="145.5" stroke="none"/>
+        <circle cx="145.5" cy="145.5" r="145.25" fill="none"/>
+      </g>
+      <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(-0.141 -0.142)" fill="none" stroke="#f37c7e" stroke-width="0.5" opacity="0.34">
+        <circle cx="189.5" cy="189.5" r="189.5" stroke="none"/>
+        <circle cx="189.5" cy="189.5" r="189.25" fill="none"/>
+      </g>
+    </g>
+    <g id="Group_289" data-name="Group 289">
+      <ellipse id="Ellipse_19" data-name="Ellipse 19" cx="105.71" cy="105.71" rx="105.71" ry="105.71" transform="translate(491.981 3598.981)" fill="#c12328"/>
+      <ellipse id="Ellipse_20" data-name="Ellipse 20" cx="84.07" cy="84.07" rx="84.07" ry="84.07" transform="translate(513.621 3620.621)" fill="#fff"/>
+      <path id="Path_468" data-name="Path 468" d="M2603.954-1312.438l-1.96-36.3-2.284,36.654Z" transform="translate(-2002.458 5014.61)" fill="#fbbc04" stroke="#fbbc04" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_469" data-name="Path 469" d="M2538.325-1275.6l-54.9,2.1,54.459,2.519Z" transform="translate(-1943.166 4977.318)" fill="#fbbc04" stroke="#fbbc04" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <rect id="Rectangle_162" data-name="Rectangle 162" width="0.69" height="75.229" rx="0.345" transform="matrix(0.852, -0.524, 0.524, 0.852, 566.013, 3650.796)" fill="none" stroke="#4285f4" stroke-width="2"/>
+      <ellipse id="Ellipse_21" data-name="Ellipse 21" cx="6.968" cy="6.968" rx="6.968" ry="6.968" transform="translate(592.006 3697.441)" fill="#fbbc04"/>
+      <rect id="Rectangle_163" data-name="Rectangle 163" width="1.526" height="17.557" rx="0.763" transform="translate(597.5 3624.302)" fill="#fcf2f2" stroke="#f3e4e4" stroke-width="5"/>
+      <rect id="Rectangle_164" data-name="Rectangle 164" width="1.526" height="17.557" rx="0.763" transform="translate(653.19 3646.053) rotate(45)" fill="#fcf2f2" stroke="#f3e4e4" stroke-width="5"/>
+      <rect id="Rectangle_165" data-name="Rectangle 165" width="1.526" height="17.557" rx="0.763" transform="translate(678.708 3704.391) rotate(90)" fill="#fcf2f2" stroke="#f3e4e4" stroke-width="5"/>
+      <rect id="Rectangle_166" data-name="Rectangle 166" width="1.526" height="17.557" rx="0.763" transform="translate(655.245 3761.055) rotate(135)" fill="#fcf2f2" stroke="#f3e4e4" stroke-width="5"/>
+      <rect id="Rectangle_167" data-name="Rectangle 167" width="1.526" height="17.557" rx="0.763" transform="translate(598.004 3785.08) rotate(180)" fill="#fcf2f2" stroke="#f3e4e4" stroke-width="5"/>
+      <rect id="Rectangle_168" data-name="Rectangle 168" width="1.526" height="17.557" rx="0.763" transform="translate(542.62 3763.729) rotate(-135)" fill="#fcf2f2" stroke="#f3e4e4" stroke-width="5"/>
+      <rect id="Rectangle_169" data-name="Rectangle 169" width="1.526" height="17.557" rx="0.763" transform="translate(516.674 3705.171) rotate(-90)" fill="#fcf2f2" stroke="#f3e4e4" stroke-width="5"/>
+      <rect id="Rectangle_170" data-name="Rectangle 170" width="1.526" height="17.557" rx="0.763" transform="translate(541.106 3648.318) rotate(-45)" fill="#fcf2f2" stroke="#f3e4e4" stroke-width="5"/>
+    </g>
+  </g>
+</svg>
