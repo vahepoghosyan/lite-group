@@ -1,10 +1,6 @@
 main {
     margin-top: $spacing*13;
 
-    .cover-container {
-        //margin-bottom: $spacing*;
-    }
-
     .cover {
         //padding-top: $spacing*3;
         position: relative;
@@ -33,15 +29,15 @@ main {
         }
     }
 
-    >article {
-        >section {
+    > article {
+        > section {
             position: relative;
             padding: $spacing*12 0;
         }
 
         .basics {
             section {
-                margin-bottom: $spacing*3;
+                margin-bottom: $spacing*3.75;
                 padding: $spacing*7;
                 box-shadow: $primary-box-shadow;
                 border-radius: $border-radius;
@@ -72,6 +68,21 @@ main {
                 width: 90px;
             }
         }
+
+        .news-item {
+            padding-top: 60%;
+            overflow: hidden;
+
+            .news-content {
+                @include position(absolute, 0, 0, 0, 0);
+                background-image: linear-gradient(rgba(2, 2, 2, 0) 30%, rgba(78, 74, 74, .95) 80%, rgba(48, 45, 45, 0.97) 200%);
+
+                p {
+                    color: $gray-3;
+                }
+            }
+        }
+
 
     }
 }

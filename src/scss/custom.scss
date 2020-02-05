@@ -44,8 +44,20 @@ a {
     border-radius: $border-radius;
 }
 
+.primary-shadow {
+    box-shadow: $primary-box-shadow;
+}
+
+.secondary-shadow {
+    box-shadow: $secondary-box-shadow;
+}
+
 .primary-background {
     background-color: rgba(227, 78, 108, 0.11);
+}
+
+.secondary-background {
+    background-color: #F6F6F6;
 }
 
 .primary-button {
@@ -68,27 +80,31 @@ a {
 .mb-6 {
     margin-bottom: $spacing*6;
 }
+
 .mb-7 {
     margin-bottom: $spacing*7;
 }
+
 .mb-8 {
     margin-bottom: $spacing*8;
 }
+
 .mb-9 {
     margin-bottom: $spacing*9;
 }
+
 .mb-10 {
     margin-bottom: $spacing*10;
 }
-
-
-
 
 
 .primary {
     color: $primary;
 }
 
+.contrast-text {
+    color: $contrast-text;
+}
 
 .with-overlay {
     position: relative;
@@ -101,7 +117,20 @@ a {
         pointer-events: none;
         touch-action: none;
     }
+
+    //&.with-overlay-gradient {
+    //    &:after {
+    //        background-color: transparent;
+    //        background-image: linear-gradient(rgba(2, 2, 2, 0) 30%, rgba(78, 74, 74, .95) 80%, rgba(48, 45, 45, 0.97) 200%)
+    //    }
+    //}
 }
+
+.row>[class^=col-] {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
