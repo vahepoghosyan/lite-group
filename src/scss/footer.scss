@@ -1,5 +1,27 @@
 footer {
+    position: relative;
+    padding: $spacing*10 0;
 
+    svg {
+        width: 35px;
+        height: 35px;
+
+        path {
+            transition: .2s;
+        }
+
+        &:hover path {
+            fill: $primary
+        }
+    }
+
+    li {
+        color: $text-color;
+    }
+
+    span {
+        color: $gray-3;
+    }
 }
 
 @media (min-width: 992px) {

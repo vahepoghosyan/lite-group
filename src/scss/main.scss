@@ -50,7 +50,7 @@ main {
 
         .goals-content {
             background: url("../../assets/img/photo-1.jpg") no-repeat center center / cover;
-            //@include position(absolute, 0, 0, 0, 0);
+
             > div {
                 z-index: 2;
             }
@@ -70,11 +70,11 @@ main {
         }
 
         .news-item {
-            padding-top: 60%;
+            padding-top: 30%;
             overflow: hidden;
 
             .news-content {
-                @include position(absolute, 0, 0, 0, 0);
+
                 background-image: linear-gradient(rgba(2, 2, 2, 0) 30%, rgba(78, 74, 74, .95) 80%, rgba(48, 45, 45, 0.97) 200%);
 
                 p {
@@ -83,6 +83,80 @@ main {
             }
         }
 
+        #clients {
+            //ul {
+            //    list-style-image: url("../../assets/img/list-img.svg");
+            //}
+        }
 
+        .swiper-slide {
+            padding: 5px;
+        }
+
+        .clients-logos {
+            @include position(absolute, 0, 0, 0, 0);
+
+            img {
+                position: absolute;
+                max-height: 30px;
+                mix-blend-mode: multiply;
+            }
+
+            #ardi {
+                top: 30%;
+                right: 64%;
+
+            }
+
+            #tbc {
+                top: 32%;
+                right: 4%;
+
+            }
+
+            #unison {
+                top: 34%;
+                left: 55%;
+            }
+
+            #nairi {
+                top: 60%;
+                right: 43%;
+            }
+
+            #reso {
+                top: 67%;
+                right: 36%;
+            }
+
+            #rgs {
+                top: 67%;
+                right: 16%;
+            }
+
+            #ararat {
+                top: 74%;
+                left: 50%;
+            }
+
+            #sil {
+                top: 60%;
+                right: 26%;
+            }
+
+            #converse {
+                right: 5%;
+                bottom: 18%
+            }
+        }
+
+        .clients-list {
+            bottom: 0;
+            left: 0;
+
+            a {
+                font-size: .875rem;
+            }
+        }
     }
 }
