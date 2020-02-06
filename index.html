@@ -19,35 +19,71 @@
 <body>
 <header>
     <nav class="navbar d-flex fixed-top align-items-center">
-        <div class="container d-flex justify-content-center align-items-center justify-content-sm-between">
-            <!--<div class="menu-burger d-sm-none">-->
-            <!--<img src="assets/img/hamburger.svg" alt="">-->
-            <!--</div>-->
+        <div class="container d-flex justify-content-between align-items-center">
+
             <a class="navbar-brand" href="#"><img src="assets/img/Logo.svg" alt=""></a>
-            <!--<div class="d-none d-sm-block">-->
-            <ul class="navbar-nav d-flex">
-                <li class="nav-item active">
-                    <a class="nav-link" href="">Главная</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Услуги</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">О нас</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Характеристики</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Клиенты</a>
-                </li>
-            </ul>
-            <!--</div>-->
+            <div class="menu-burger d-lg-none">
+                <div id="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="d-none d-lg-block">
+                <ul class="navbar-nav d-flex flex-column flex-lg-row">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#specifications">Характеристики</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#clients">Клиенты</a>
+                    </li>
+                    <li class="nav-item font-weight-bold">
+                        <a class="nav-link">en</a> | <a class="nav-link">an</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </nav>
+    <div class="navigation d-lg-none">
+        <div class="container">
+            <ul class="navbar-nav d-flex flex-column flex-lg-row pt-3 pb-3">
+                <li class="nav-item mb-2 mb-lg-0  active">
+                    <a class="nav-link" href="#home">Главная</a>
+                </li>
+                <li class="nav-item mb-2 mb-lg-0 ">
+                    <a class="nav-link" href="#services">Услуги</a>
+                </li>
+                <li class="nav-item mb-2 mb-lg-0 ">
+                    <a class="nav-link" href="#about-us">О нас</a>
+                </li>
+                <li class="nav-item mb-2 mb-lg-0 ">
+                    <a class="nav-link" href="#specifications">Характеристики</a>
+                </li>
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link" href="#clients">Клиенты</a>
+                </li>
+                <li class="nav-item font-weight-bold">
+                    <a class="nav-link">en</a> | <a class="nav-link">am</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </header>
 <main>
-    <div class="container cover-container">
+    <div class="container cover-container section" id="home">
         <div class="swiper-container home-cover">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -56,7 +92,7 @@
                             <img src="assets/img/cover.jpg" alt="cover">
                         </div>
                         <div class="cover-title d-flex align-items-center ">
-                            <div class="cover-title-content col-6">
+                            <div class="cover-title-content col-lg-7">
                                 <h2>Важна каждая деталь!</h2>
                                 <p>Команда полных энергии и энтузиазма молодых специалистов,
                                     отличающихся ярким воображением и находящихся в
@@ -77,7 +113,7 @@
                             <img src="assets/img/cover.jpg" alt="cover">
                         </div>
                         <div class="cover-title d-flex align-items-center ">
-                            <div class="cover-title-content col-6">
+                            <div class="cover-title-content col-lg-7">
                                 <h2>Важна каждая деталь!</h2>
                                 <p>Команда полных энергии и энтузиазма молодых специалистов,
                                     отличающихся ярким воображением и находящихся в
@@ -98,7 +134,7 @@
                             <img src="assets/img/cover.jpg" alt="cover">
                         </div>
                         <div class="cover-title d-flex align-items-center ">
-                            <div class="cover-title-content col-6">
+                            <div class="cover-title-content col-lg-7">
                                 <h2>Важна каждая деталь!</h2>
                                 <p>Команда полных энергии и энтузиазма молодых специалистов,
                                     отличающихся ярким воображением и находящихся в
@@ -117,48 +153,54 @@
         </div>
     </div>
     <article>
-        <section>
+        <section id="services" class="section">
             <div class="container">
                 <h3 class="text-center text-uppercase section-title mb-8">Наши Меры По Обеспечению <span
                         class="primary">Устойчивого Развития</span></h3>
                 <div class="row">
-                    <div class="col-4 mb-4">
+                    <div class="col-sm-6 col-lg-4 mb-md-4 text-center text-sm-left">
                         <img src="assets/img/Group307.svg" class="mb-3" alt="icon">
-                        <p>Непрерывное исследование и применение новых технологий</p>
+                        <p class="pl-5 pr-5 p-sm-0">Непрерывное исследование и применение новых технологий</p>
                     </div>
-                    <div class="col-4 mb-4">
+                    <div class="col-sm-6 col-lg-4 mb-md-4 text-center text-sm-left">
                         <img src="assets/img/Group306.svg" class="mb-3" alt="icon">
-                        <p>Регулярные обновления уже имеющихся автоматизированных систем</p>
+                        <p class="pl-5 pr-5 p-sm-0">Регулярные обновления уже имеющихся автоматизированных систем</p>
                     </div>
-                    <div class="col-4 mb-4">
+                    <div class="col-sm-6 col-lg-4 mb-md-4 text-center text-sm-left">
                         <img src="assets/img/Group305.svg" class="mb-3" alt="icon">
-                        <p>Разработка и внедрение новых систем, способных работать как отдельно, так и как часть
+                        <p class="pl-5 pr-5 p-sm-0">Разработка и внедрение новых систем, способных работать как
+                            отдельно, так и как часть
                             интегрированной инфраструктуры</p>
                     </div>
-                    <div class="col-4 mb-4">
+                    <div class="col-sm-6 col-lg-4 mb-md-4 text-center text-sm-left">
                         <img src="assets/img/Group308.svg" class="mb-3" alt="icon">
-                        <p>Регулярное обновление и модернизация технического оборудования, используемого сотрудниками в
+                        <p class="pl-5 pr-5 p-sm-0">Регулярное обновление и модернизация технического оборудования,
+                            используемого сотрудниками в
                             организации</p>
                     </div>
-                    <div class="col-4 mb-4">
+                    <div class="col-sm-6 col-lg-4 mb-md-4 text-center text-sm-left">
                         <img src="assets/img/Group309.svg" class="mb-3" alt="icon">
-                        <p>Предоставление системы LiteMS (Система представляет собой программную платформу для
+                        <p class="pl-5 pr-5 p-sm-0">Предоставление системы LiteMS (Система представляет собой
+                            программную платформу для
                             эффективной
                             организации работы между нами и нашими клиентами)</p>
                     </div>
-                    <div class="col-4 mb-4">
+                    <div class="col-sm-6 col-lg-4 mb-md-4 text-center text-sm-left">
                         <img src="assets/img/Group310.svg" class="mb-3" alt="icon">
                         <p>Соответствие деятельности организации международным стандартам.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="primary-background">
+        <section class="primary-background section" id="about-us">
             <div class="container">
                 <h3 class="text-uppercase">О нас</h3>
                 <h5 class="primary font-weight-normal mb-8">Важна каждая деталь!</h5>
-                <div class="row justify-content-between">
-                    <div class="col-8">
+                <div class="row justify-content-between flex-row-reverse">
+                    <div class="col-md-4">
+                        <img src="assets/img/about-us.png" class="border-radius w-100" alt="">
+                    </div>
+                    <div class="col-md-8">
                         <div class="mb-4">
                             <h5 class="font-weight-normal">Наша миссия</h5>
                             <p>Предоставить организациям решения для автоматизации, которые воплотят в жизнь все, даже
@@ -175,21 +217,18 @@
                                 находящихся в постоянном творческом поиске.</p>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <img src="assets/img/about-us.png" class="border-radius w-100" alt="">
-                    </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section  id="specifications" class="section">
             <div class="container">
                 <h3 class="text-uppercase text-center mb-8">
                     У нас есть чёткая стратегия, <span class="primary">основанная
                     на следующих основных принципах</span>
                 </h3>
                 <article class="basics">
-                    <section class="d-flex align-items-center">
-                        <img src="assets/img/Group297.svg" alt="icons">
+                    <section class="d-flex align-items-center flex-column flex-lg-row">
+                        <img class="d-inline-block mb-3 mb-lg-0" src="assets/img/Group297.svg" alt="icons">
                         <div class="pr-4 pl-4">
                             <h5 class="mb-4">Постоянное улучшение качества наших услуг</h5>
                             <p>При создании страховых продуктов методом коммерческого страхования каждый страхователь
@@ -197,8 +236,8 @@
                                 страховую премию. При этом он не принимает участия в создании страхового продукта.</p>
                         </div>
                     </section>
-                    <section class="d-flex flex-row-reverse align-items-center">
-                        <img src="assets/img/Group299.svg" alt="icons">
+                    <section class="d-flex flex-lg-row-reverse align-items-center flex-column flex-lg-row">
+                        <img class="d-inline-block mb-3 mb-lg-0" src="assets/img/Group299.svg" alt="icons">
                         <div class="pr-4 pl-4">
                             <h5 class="mb-4">Поддержание высокого уровня удовлетворенности клиентов</h5>
                             <p>Методы создания страховых продуктов - это отношения, которые определяют, каким именно
@@ -207,8 +246,8 @@
                                 конкретных страховых продуктов.</p>
                         </div>
                     </section>
-                    <section class="d-flex align-items-center">
-                        <img src="assets/img/Group290.svg" alt="icons">
+                    <section class="d-flex align-items-center flex-column flex-lg-row">
+                        <img class="d-inline-block mb-3 mb-lg-0" src="assets/img/Group290.svg" alt="icons">
                         <div class="pr-4 pl-4">
                             <h5 class="mb-4">Экономия времени: самого дорогого ресурса клиентов</h5>
                             <p>В зависимости от используемого метода создания страховых продуктов можно выделить два
@@ -219,8 +258,8 @@
                                 коммерческого страхования.</p>
                         </div>
                     </section>
-                    <section class="d-flex flex-row-reverse align-items-center">
-                        <img src="assets/img/Group288.svg" alt="icons">
+                    <section class="d-flex flex-lg-row-reverse align-items-center flex-column flex-lg-row">
+                        <img class="d-inline-block mb-3 mb-lg-0" src="assets/img/Group288.svg" alt="icons">
                         <div class="pr-4 pl-4">
                             <h5 class="mb-4">Предоставление высококлассны доступных услуг в короткие сроки</h5>
                             <p>В зависимости от используемого метода создания страховых продуктов можно выделить два
@@ -231,8 +270,8 @@
                                 коммерческого страхования.</p>
                         </div>
                     </section>
-                    <section class="d-flex align-items-center">
-                        <img src="assets/img/Group286.svg" alt="icons">
+                    <section class="d-flex align-items-center flex-column flex-lg-row">
+                        <img class="d-inline-block mb-3 mb-lg-0" src="assets/img/Group286.svg" alt="icons">
                         <div class="pr-4 pl-4">
                             <h5 class="mb-4">Предложение и реализация смелых решений.</h5>
                             <p>Сраховой продукт как результат целесообразной деятельности людей представляет собой
@@ -249,16 +288,16 @@
                 <h3 class="text-uppercase text-center mb-8">наши <span class="primary">цели</span></h3>
 
                 <div class="d-flex justify-content-center">
-                    <ul class="col-8">
+                    <ul class="col-lg-8">
                         <li class="d-flex align-items-center mb-6">
-                            <img class="mr-5" src="assets/img/Group59.svg" alt="icon">
+                            <img class="mr-3 mr-lg-5" src="assets/img/Group59.svg" alt="icon">
                             <p>
                                 Стать лидером в развитии информационных систем в сфере финансов как на местном, так и на
                                 международном рынке
                             </p>
                         </li>
                         <li class="d-flex align-items-center">
-                            <img class="mr-5" src="assets/img/Group63.svg" alt="icon">
+                            <img class="mr-3 mr-lg-5" src="assets/img/Group63.svg" alt="icon">
                             <p>
                                 Изменить стереотипы и взгляды на роль и значение информационных технологий в финансовой
                                 индустрии
@@ -272,7 +311,7 @@
             <div class="container">
                 <h3 class="text-uppercase text-center mb-8">Наши <span class="primary">продукты</span></h3>
                 <div class="d-flex justify-content-center">
-                    <article class="col-8">
+                    <article class="col-lg-8">
                         <section class="mb-5">
                             <img class="d-inline-block mb-4" src="assets/img/Lite-Insurance.svg" alt="lite-insurance">
                             <p class="mb-4">Система предназначена для комплексной автоматизации бизнес-процессов
@@ -386,40 +425,40 @@
             <div class="container">
                 <h3 class="text-uppercase text-center mb-8">Наши <span class="primary">новости</span></h3>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div class="news-item border-radius position-relative"
                              style="background: url(assets/img/photo-1.jpg) no-repeat center center / cover">
-                            <div class="news-content d-flex justify-content-end flex-column p-4">
+                            <div class="news-content d-flex justify-content-end flex-column p-3 p-lg-4">
                                 <h5 class="contrast-text">Работа не волк в лес не убежит.
                                     А что скажешь ты о своей работе? </h5>
                                 <p class="m-0">05 января 2020</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div class="news-item border-radius position-relative"
                              style="background: url(assets/img/photo-1.jpg) no-repeat center center / cover">
-                            <div class="news-content d-flex justify-content-end flex-column p-4">
+                            <div class="news-content d-flex justify-content-end flex-column p-3 p-lg-4">
                                 <h5 class="contrast-text">Работа не волк в лес не убежит.
                                     А что скажешь ты о своей работе? </h5>
                                 <p class="m-0">05 января 2020</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div class="news-item border-radius position-relative"
                              style="background: url(assets/img/photo-1.jpg) no-repeat center center / cover">
-                            <div class="news-content d-flex justify-content-end flex-column p-4">
+                            <div class="news-content d-flex justify-content-end flex-column p-3 p-lg-4">
                                 <h5 class="contrast-text">Работа не волк в лес не убежит.
                                     А что скажешь ты о своей работе? </h5>
                                 <p class="m-0">05 января 2020</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div class="news-item border-radius position-relative"
                              style="background: url(assets/img/photo-1.jpg) no-repeat center center / cover">
-                            <div class="news-content d-flex justify-content-end flex-column p-4">
+                            <div class="news-content d-flex justify-content-end flex-column p-3 p-lg-4">
                                 <h5 class="contrast-text">Работа не волк в лес не убежит.
                                     А что скажешь ты о своей работе? </h5>
                                 <p class="m-0">05 января 2020</p>
@@ -429,7 +468,7 @@
                 </div>
             </div>
         </section>
-        <section id="clients">
+        <section id="clients" class="section">
             <div class="container">
                 <h3 class="text-uppercase text-center mb-8">Наши <span class="primary">Клиенты</span></h3>
                 <div class="position-relative">
@@ -484,11 +523,11 @@
 </main>
 <footer class="secondary-background">
     <div class="container">
-        <div class="row mb-5">
-            <div class="col-3">
-                <img class="d-inline-block mb-3" src="assets/img/Logo.svg" alt="logo">
+        <div class="row mb-4 mb-lg-5">
+            <div class="col-lg-3 text-center text-lg-left">
+                <img class="d-inline-block" src="assets/img/Logo.svg" alt="logo">
             </div>
-            <div class="col-3">
+            <div class="col-4 col-lg-3">
                 <nav>
                     <h6>Услуги</h6>
                     <ul>
@@ -497,7 +536,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-3">
+            <div class="col-4 col-lg-3">
                 <nav>
                     <h6>О нас</h6>
                     <ul>
@@ -507,8 +546,8 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-3">
-                <h6>Наши контакты</h6>
+            <div class="col-4 col-lg-3">
+                <h6>Контакты</h6>
                 <nav>
                     <p class="mb-1">info@lite-group.org</p>
                     <p class="mb-3">+374 99 36-00-00</p>
@@ -516,7 +555,7 @@
             </div>
         </div>
         <div class="d-flex flex-column align-items-center">
-            <ul class="d-flex mb-5">
+            <ul class="d-flex mb-4 mb-lg-5">
                 <li class="mr-3">
                     <a href="#">
                         <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -535,7 +574,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="mr-3">
+                <li>
                     <a href="#">
                         <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                             <path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm-74.390625 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0"/>
@@ -550,6 +589,10 @@
 
 
 <script src="assets/js/swiper.min.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
 <script src="assets/js/app.min.js"></script>
 
 </body>

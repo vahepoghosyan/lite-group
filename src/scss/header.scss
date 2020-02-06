@@ -1,5 +1,18 @@
 header {
 
+    .navigation {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        //border-top: 1px solid $gray-3;
+        //border-bottom: 1px solid $gray-3;
+        background-color: $white;
+        box-shadow: $secondary-box-shadow;
+    }
+
     .navbar {
         height: $spacing*10;
         background-color: $white;
@@ -12,7 +25,12 @@ header {
         }
 
         .nav-item {
-            margin-left: $spacing*6;
+            @media (min-width: 992px) {
+                margin-left: $spacing*6;
+                &:last-of-type {
+                    margin-left: $spacing*8;
+                }
+            }
 
             &.active {
                 .nav-link {

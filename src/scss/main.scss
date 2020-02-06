@@ -13,17 +13,30 @@ main {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                min-height: 300px;
+                @media (min-width: 992px) {
+                    min-height: 370px;
+                }
             }
         }
 
         &-title {
             @include position(absolute, 0, 0, 0, 0);
-            padding: $spacing*2 $spacing*10;
+            padding: $spacing*2 $spacing*2;
+
+            @media (min-width: 992px) {
+                padding: $spacing*2 $spacing*10;
+            }
 
             &-content {
                 p {
-                    font-size: (14/$rem) rem;
+                    font-size: 0.875rem;
                     color: $contrast-text;
+                    max-height: 40px;
+                    overflow: hidden;
+                    @media (min-width: 992px) {
+                        max-height: 60px;
+                    }
                 }
             }
         }
@@ -32,18 +45,28 @@ main {
     > article {
         > section {
             position: relative;
-            padding: $spacing*12 0;
+            padding: $spacing*8 0;
+            @media (min-width: 992px) {
+                padding: $spacing*12 0;
+            }
         }
 
         .basics {
             section {
                 margin-bottom: $spacing*3.75;
-                padding: $spacing*7;
+                padding: $spacing*4;
                 box-shadow: $primary-box-shadow;
                 border-radius: $border-radius;
 
+                @media (min-width: 992px) {
+                    padding: $spacing*7;
+                }
+
                 img {
-                    max-width: 373px;
+                    max-width: 270px;
+                    @media (min-width: 992px) {
+                        max-width: 373px;
+                    }
                 }
             }
         }
@@ -81,12 +104,6 @@ main {
                     color: $gray-3;
                 }
             }
-        }
-
-        #clients {
-            //ul {
-            //    list-style-image: url("../../assets/img/list-img.svg");
-            //}
         }
 
         .swiper-slide {
