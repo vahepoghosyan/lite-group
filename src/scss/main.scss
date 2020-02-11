@@ -73,6 +73,7 @@ main {
 
         .goals-content {
             background: url("../../assets/img/photo-1.jpg") no-repeat center center / cover;
+            background-attachment: fixed;
 
             > div {
                 z-index: 2;
@@ -115,61 +116,80 @@ main {
 
             img {
                 position: absolute;
-                max-height: 30px;
+                //max-height: 30px;
                 mix-blend-mode: multiply;
             }
 
             #ardi {
+                height: 50px;
                 top: 30%;
                 right: 64%;
-
             }
 
             #tbc {
-                top: 32%;
-                right: 4%;
-
+                height: 35px;
+                top: 22%;
+                right: 44%;
             }
 
             #unison {
+                height: 30px;
                 top: 34%;
                 left: 55%;
             }
 
             #nairi {
-                top: 60%;
-                right: 43%;
+                height: 50px;
+                top: 56%;
+                right: 45%;
             }
 
             #reso {
-                top: 67%;
-                right: 36%;
+                height: 30px;
+                top: 71%;
+                right: 32%;
             }
 
             #rgs {
-                top: 67%;
+                height: 50px;
+                top: 60%;
                 right: 16%;
             }
 
+            #armenia {
+                height: 40px;
+                top: 60%;
+                right: 30%;
+            }
+
             #ararat {
-                top: 74%;
-                left: 50%;
+                height: 30px;
+                top: 76%;
+                left: 72%;
             }
 
             #sil {
-                top: 60%;
-                right: 26%;
+                height: 40px;
+                top: 50%;
+                right: 30%;
             }
 
             #converse {
+                height: 20px;
                 right: 5%;
-                bottom: 18%
+                bottom: 8%
             }
         }
 
         .clients-list {
+            position: static;
             bottom: 0;
             left: 0;
+
+            @media (min-width: 992px) {
+                position: absolute;
+                width: 50%;
+            }
 
             a {
                 font-size: .875rem;

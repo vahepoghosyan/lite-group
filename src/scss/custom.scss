@@ -159,6 +159,17 @@ a {
     }
 }
 
+.fade-effect {
+    transform: translateY(30%);
+    transition: .3s;
+    opacity: 0;
+
+    &.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 #nav-icon {
     width: 50px;
     height: 35px;

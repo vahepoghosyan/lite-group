@@ -1,60 +1,5 @@
-(function () {
-        if (document.querySelector(".home-cover")) {
-            new Swiper(".home-cover", {
-                speed: 500,
-                autoplay: true,
-                spaceBetween: 30,
-                // effect: 'fade',
-                // pagination: {
-                // el: ".swiper-pagination",
-                // clickable: true
-                // }
-            });
-        }
-
-        if (document.querySelector(".our-team")) {
-            new Swiper(".our-team", {
-                speed: 500,
-                autoplay: true,
-                spaceBetween: 30,
-                // slidesPerColumn: 2,
-                slidesPerView: 4,
-                breakpoints: {
-                    640: {
-                        slidesPerView: 2,
-                        spaceBetween: 20,
-                    },
-                    768: {
-                        slidesPerView: 2,
-                        spaceBetween: 20,
-                    },
-                    1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 20,
-                    },
-                }
-            });
-        }
-
-        $('.navigation').click(function (event) {
-            event.stopPropagation();
-        });
-
-        $('#nav-icon').click(function (event) {
-            event.stopPropagation();
-            $(this).toggleClass('open');
-            $('.navigation').slideToggle();
-        });
-
-        $(window).click(function () {
-            $('.navigation').slideUp();
-            $('#nav-icon').removeClass('open')
-        })
-    }
-)();
-
 $(document).ready(function () {
-    $('.nav-link').bind('click', function (e) {
+    $('.nav-link, .navbar-brand, .products').bind('click', function (e) {
         e.preventDefault(); // prevent hard jump, the default behavior
 
         var target = $(this).attr("href"); // Set the target as variable
@@ -75,6 +20,63 @@ $(document).ready(function () {
             $('.nav-item').eq(i).addClass('active');
         }
     });
+
+    if (document.querySelector(".home-cover")) {
+        const cover = new Swiper(".home-cover", {
+            speed: 1000,
+            autoplay: true,
+            spaceBetween: 30,
+            // effect: 'fade',
+            // pagination: {
+            // el: ".swiper-pagination",
+            // clickable: true
+            // }
+        });
+
+        cover.on('slideChange', function (active) {
+            console.log(this);
+        });
+    }
+
+    if (document.querySelector(".our-team")) {
+        new Swiper(".our-team", {
+            speed: 500,
+            autoplay: true,
+            spaceBetween: 30,
+            // slidesPerColumn: 2,
+            slidesPerView: 4,
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+            }
+        });
+    }
+
+    $('.navigation').click(function (event) {
+        event.stopPropagation();
+    });
+
+    $('#nav-icon').click(function (event) {
+        event.stopPropagation();
+        $(this).toggleClass('open');
+        $('.navigation').slideToggle();
+    });
+
+    $(window).click(function () {
+        $('.navigation').slideUp();
+        $('#nav-icon').removeClass('open')
+    })
+
 
 });
 
